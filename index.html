@@ -1,394 +1,562 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+  <title>Git</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+  <meta name="description" content="A completely childish person with no manners">
+  <meta name="author" content="Alexander Groß">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+  </script>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAxTO0AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvEAMk7xADJO8gAyTvIAMk7zAP///wD///8AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7zADJO8wD///8A////ADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zADJO8wAyT/QA////AP///wAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x9TJO8vYyTvL/Mk7z/zJO8/8yT/QAM0/1AP///wD///8AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7z/zJO8/8yT/T/M0/1/zNP9QD///8A////ADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/b/////AP///wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zNzJO8zcyT/T/M0/1/zNP9f8zT/b/M0/2/zNQ9/////8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8zcyT/Q3M0/1/zNP9QAzT/YAM0/29jNQ9/8zUPf/M1D4/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/Q3M0/1NzNP9f8zT/YAM0/2ADNQ9/UzUPf/M1D4/zNQ+f8yTvEAMk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/T/M0/1NzNP9TczT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f////8AMk7xADJO8gAyTvL/Mk7z/zJO8/8yT/T/M0/1/zNP9QAzT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f////8A////ADJO8gAyTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f8zUPkA////AP///wAyTvIAMk7zADJO8wAyT/QAM0/1/zNP9f8zT/YAM0/2aDNQ9/QzUPf/M1D4/zNQ+f8zUPkANFD6AP///wD///8AMk7zADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2OjNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gD///8A////ADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoA////AP///wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9wAzUPgAM1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoANFH7AP///wD///8A/n8AAPw/AAD4HwAA8A8AAOGHAADBgwAAgYEAAAGwAAABsAAAgeEAAMHDAADhhwAA8w8AAP4fAAD8PwAA/n8AAA==" rel="icon" type="image/x-icon">
+</head>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <img src="images/git-logo.png" alt="Git logo">
+        <h3>Commit often, perfect later, publish once</h3>
+      </section>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+      <section>
+        <section>
+          <h1>Warum git?</h1>
+        </section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+        <section>
+          <h2>Etwas Historie</h2>
+        </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+        <section>
+          <img src="images/linus-torvalds.jpeg" alt="Linus Torvalds">
+          <aside class="notes">
+            "Linus Torvalds" by Unknown photographer who sold rights to the picture to linuxmag.com - Linuxmag.com; The image is from an article in a December 2002 issue of Linux Magazine[1]. Licensed under CC BY-SA 3.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Linus_Torvalds.jpeg#/media/File:Linus_Torvalds.jpeg
+          </aside>
+        </section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+        <section>
+          <img src="images/tux.png" alt="Tux">
+          <aside class="notes">
+            "Tux" by Larry Ewing [1] - image sourcedrawing description. Via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Tux.png#/media/File:Tux.png
+          </aside>
+        </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+        <section>
+          <img src="images/git-logo.png" alt="Git logo">
+          <blockquote>
+            A completely ignorant, childish person with no manners.
+            <footer>
+              <cite>— <a href="http://www.urbandictionary.com/define.php?term=Git" target="_blank">Urban Dictionary</a></cite>
+            </footer>
+          </blockquote>
+        </section>
+      </section>
 
-			</div>
+      <section>
+        <section>
+          <h1>8 Gründe</h1>
+        </section>
+      </section>
 
-		</div>
+      <section>
+        <section>
+          <h2>1. Git ist ein <em>verteiltes</em> Versionskontollsystem<sup>*</sup></h2>
+          <p>* es unterstützt die Arbeit der Entwickler</p>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+        <section data-background="#2b2b2b">
+          <img src="images/subversion-logo.svg" alt="Subversion logo">
+        </section>
 
-		<script>
+        <section data-background="#2b2b2b">
+          <img src="images/centralized-vcs.png" alt="Centralized VCS">
+        </section>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+        <section style="margin-top: -50px;" data-transition="linear">
+          <img src="images/distributed-vcs.png" alt="Distributed VCS">
+        </section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        <section data-background="images/offline.jpg">
+          <aside class="notes">http://www.flickr.com/photos/saschaaa/152502539/</aside>
+        </section>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+        <section>
+          <ul>
+            <li>git funktioniert offline<br>
+              &hellip;und ist deshalb <strong>schnell</strong></li>
+            <li>Die Veröffentlichung von Änderungen ist explizit<br>
+              &hellip;und erlaubt deshalb <strong>Korrekturen</strong></li>
+            <li>Die Mitarbeit ist Open Source ist einfacher geworden<br>
+              &hellip;was auch für Unternehmen profitabel ist</li>
+          </ul>
+        </section>
+      </section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+      <section>
+        <section>
+          <h2>2. Git basiert auf einem <em>simplen</em> Grundprinzip<sup>*</sup></h2>
+          <p>* das mathematisch beschrieben ist</p>
+        </section>
 
-		</script>
+        <section>
+          <h3>Eine Änderung ist ein Commit</h3>
+          <img src="images/internals/simple-commit-object.png">
+        </section>
 
-	</body>
+        <section>
+          <h3>Historie ist eine Folge von Commits</h3>
+          <img src="images/internals/simple-commit-history.png">
+        </section>
+
+        <section>
+          <h3>Branches sind Zeiger auf einen Commit</h3>
+          <img src="images/internals/branch-and-history-without-HEAD.png">
+        </section>
+
+        <section>
+          <h3>Wir bauen uns einen Graphen</h3>
+          <img src="images/branching/rebase-onto-1.png">
+          <p class="fragment">* einen gerichteten azyklischen Graphen</p>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>3. Branching (und Merging) ist einfach<sup>*</sup></h2>
+          <p>* auch ohne Administratoren</p>
+        </section>
+
+        <section>
+          <pre style="margin-top: 1em"><span style="color: #00CC00">agross@FIRIEL</span> <span style="color: #BFBF00">/work/grossweber-website/</span> <span style="color: #00CC00">(master)</span>
+$ git branch -a
+<span style="color: #00CC00">  experimental/accessing-compiled-content
+  experimental/progressive-jpeg
+  experimental/webfont-search-button
+  feature/ab-testing
+  feature/geo
+* <span style="color: #000000; background-color: #00CC00">master</span>
+  upgrade/nsb5</span>
+<span style="color: #CC0000">  remotes/origin/HEAD</span> -> origin/master
+<span style="color: #CC0000">  remotes/origin/feature/ab-testing
+  remotes/origin/master</span></pre>
+        </section>
+        <section>
+          <ul>
+            <li>Branches sind zunächst <strong>lokal</strong></li>
+            <li>Branches sind <strong>billig</strong></li>
+            <li>gits Mergealgorithmus wurde mithilfe des Linux Kernel-Source <strong>feinabgestimmt</strong></li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>4. Korrekturen<sup>*</sup> sind möglich</h2>
+          <p>* jederzeit korrigieren zu können ist wunderbar</p>
+        </section>
+
+        <section>
+          <h3>Wem kommt das bekannt vor?</h3>
+        </section>
+
+        <section>
+          <blockquote>
+            Ich habe vergessen eine Datei zu committen!
+            <footer>
+              <cite>— Alexander Groß</cite>
+            </footer>
+          </blockquote>
+          <img class="fragment" src="images/facepalm-1.jpg" alt="Facepalm">
+        </section>
+
+        <section>
+          <blockquote>
+            Ich habe mich in der Commit Message vertippt!
+            <footer>
+              <cite>— Alexander Groß</cite>
+            </footer>
+          </blockquote>
+
+          <img src="images/facepalm-2.jpg" alt="Facepalm" style="height: 500px">
+        </section>
+
+        <section>
+          <blockquote>
+            Der letzte Commit war doch keine so gute Idee!
+            <footer>
+              <cite>— Alexander Groß</cite>
+            </footer>
+          </blockquote>
+
+          <img src="images/facepalm-3.gif" alt="Facepalm">
+        </section>
+
+        <section>
+          <blockquote>
+            Jetzt habe ich 3 Anläufe für den Bugfix benötigt!
+            <footer>
+              <cite>— Alexander Groß</cite>
+            </footer>
+          </blockquote>
+
+          <img src="images/facepalm-4.jpg" alt="Facepalm">
+        </section>
+
+        <section>
+          <h3>All das (und mehr) lässt sich korrigieren!<sup>*</sup></h3>
+          <p>* git besitzt unzählige <strong>Sicherheitsvorkehrungen</strong> um bspw. Korrekturen mehrfach durchführen zu können</p>
+        </section>
+
+        <section data-background="images/futurama-fry.jpg">
+        </section>
+
+        <section>
+          <h3>...um eine <em>Geschichte</em> zu erzählen</h3>
+
+          <ul>
+            <li>Geschichten kürzen ab</li>
+            <li>Geschichten beschönigen tatsächliche Ereignisse</li>
+            <li><strong>Geschichten sind verständlich</strong></li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>5. git schreibt keinen Workflow vor<sup>*</sup></h2>
+          <p>* wie wäre es <em>nur das Beste</em> für sich zu wählen</p>
+        </section>
+
+        <section>
+          <h3>Branches zur Isolation</h3>
+          <img src="images/branching-strategies/feature-branches.png" alt="Topic Branches">
+        </section>
+
+        <section>
+          <h3><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">git-flow</a></h3>
+          <a href="images/branching-strategies/gitflow.png" target="_blank"><img src="images/branching-strategies/gitflow.png"></a>
+        </section>
+
+        <section>
+          <h3>Serverseitige Repositories<sup>*</sup></h3>
+          <p>* warum eins wenn man auch mehr haben kann</p>
+          <img src="images/cats.jpg" alt="Cats" style="height: 500px">
+        </section>
+
+        <section>
+          <h3>Zentralisiert<sup>*</sup></h3>
+          <p>* vermutlich das was Sie jetzt im Einsatz haben</p>
+          <img src="images/workflow/centralized.png" alt="Centralized workflow">
+        </section>
+
+        <section>
+          <h3>Integration Manager</h3>
+          <img src="images/workflow/integration-manager.png" alt="Integration manager">
+        </section>
+
+        <section>
+          <h3>Benevolent Dictator</h3>
+          <img src="images/workflow/benevolent-dictator.png" alt="Benevolent dictator">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>6. git funktioniert überall<sup>*</sup></h2>
+          <p>* Windows, Linux, Mac, Konsole, IDE</p>
+
+          <img class="fragment" src="images/command-line-works.png" alt="Use the bloody command line. It works!">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>7. git ist ein Skalpell<sup>*</sup></h2>
+          <p>* mit dem man sich nicht schneiden kann</p>
+        </section>
+
+        <section>
+          <h3>Wie wäre es die Korrekutur der <em>Reis</em>kostenabrechnung separat zu releasen?</h3>
+          <pre style="margin-top: 1em">$ git diff -- dokumentation.txt
+<span style="color: #7F7F7F">...</span>
+ Foobar HR
+
+ Module in der aktuellen Version von Foobar HR:
+   * Personalabrechnung
+<span style="color: #CC0000">-  * Reiskostenabrechnung</span>
+<span style="color: #00CC00">+  * Reisekostenabrechnung</span>
+   * Zeitwirtschaft
+   * Bewerbermanagement
+<span style="color: #00CC00">+  * Zielvereinbarungen</span>
+<span style="color: #00CC00">+  * digitale Personalakte</span>
+</pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>8. git ist sehr gut dokumentiert</h2>
+        </section>
+
+        <section>
+          <h3>Von Experten geschrieben</h3>
+          <a href="http://git-scm.com/docs" target="_blank"><img src="images/docs/le-petit-robert.png" alt="Le petit Robert" style="height: 400px"></a>
+          <blockquote style="margin-top: 0">
+            git-rebase - Forward-port local commits to the updated upstream head
+            <footer>
+              <cite>— <a href="http://git-scm.com/docs/git-rebase" target="_blank">git-rebase</a> <a href="http://git-scm.com/docs" target="_blank">manpage</a></cite>
+            </footer>
+          </blockquote>
+        </section>
+
+        <section>
+          <a href="http://git-scm.com/book/en/v2" target="_blank"><img src="images/docs/pro-git.png" alt="Pro Git"></a>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1 style="text-align: left; margin-left: 1.8em;">Optionen, Optionen...</h1>
+        </section>
+
+        <section>
+          <a href="http://grossweber.com"><img src="images/grossweber/logo.png" alt="GROSSWEBER Logo"></a><br>
+
+          <blockquote>
+            Git schneidet bei Source Control so gut ab wie ein scharfes japanisches Messer bei einem Steak.
+            <footer>
+              <cite>— Uwe Zimmermann, Leiter Entwicklung, iCamSystems GmbH</cite>
+            </footer>
+          </blockquote>
+          <blockquote>
+            Wir denken jetzt mehr in Git als in SVN.
+            <footer>
+              <cite>— Michael Leßnau, Softwareentwickler, SAGE HR Solutions AG</cite>
+            </footer>
+          </blockquote>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>Hallo, git</h1>
+        </section>
+
+        <section>
+          <pre>$ git &lt;verb&gt;</pre>
+          <pre>$ git help &lt;verb&gt;
+$ git &lt;verb&gt; --help</pre>
+        </section>
+
+        <section>
+          <pre>$ git init
+Initialized empty Git repository in /scratch/.git/
+
+$ echo hello, world > hello.txt
+
+$ git add hello.txt
+
+$ git commit -m "my first commit!"
+[master (root-commit) ad9a291] my first commit!
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt</pre>
+        </section>
+
+        <section>
+          <pre>$ git log --patch
+<span style="color: #BFBF00">commit ad9a291416165bb95a541321a7acf9cef9731c1d</span>
+Author: Alexander Groß &lt;agross@therightstuff.de&gt;
+Date:   Sat Feb 6 12:41:24 2010 +0100
+
+    my first commit!
+
+<span style="color: #7F7F7F">diff --git a/hello.txt b/hello.txt
+new file mode 100644
+index 0000000..4b5fa63
+--- /dev/null
++++ b/hello.txt</span>
+<span style="color: #1FAECD">@@ -0,0 +1 @@</span>
+<span style="color: #00CC00">+hello, world</span></pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>Branching</h1>
+        </section>
+
+        <section>
+          <h2>Einfache Historie</h2>
+          <img src="images/branching/1-simple-history.png">
+        </section>
+
+        <section>
+          <h2><code>HEAD</code> ist ein spezieller Zeiger</h2>
+          <img src="images/branching/2-HEAD.png">
+        </section>
+
+        <section>
+          <h2>Einen Branch erzeugen</h2>
+          <pre>$ git branch testing &lt;where&gt;</pre>
+          <small>(<code>&lt;where&gt;</code> ist standardmäßig der Commit auf den <code>HEAD</code> zeigt)</small>
+          <img src="images/branching/3-create-branch.png">
+        </section>
+
+        <section>
+          <h2>Den Branch wechseln</h2>
+          <pre>$ git checkout testing</pre>
+          <img src="images/branching/4-switch-branch.png">
+        </section>
+
+        <section>
+          <h2>Einen Commit auf <code>testing</code> erzeugen</h2>
+          <pre>$ git commit -am "work on testing"</pre>
+          <img src="images/branching/5-advance-testing.png">
+        </section>
+
+        <section>
+          <h2>Zurück auf <code>master</code></h2>
+          <pre>$ git checkout master</pre>
+          <img src="images/branching/6-back-to-master.png">
+        </section>
+
+        <section>
+          <h2>Einen Commit auf <code>master</code> erzeugen</h2>
+          <pre>$ git commit -am "work on master"</pre>
+          <img src="images/branching/7-advance-master.png">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>Integration</h1>
+        </section>
+
+        <section>
+          <h2>Divergente Historie</h2>
+          <img src="images/integration/diverged-history.png">
+        </section>
+
+        <section id="merge">
+          <h2>Integration mit <code>git merge</code></h2>
+          <pre>$ git checkout <span style="color: #F44D27">master</span>
+$ git merge experiment</pre>
+          <img src="images/integration/diverged-history-merge.png">
+
+          <small>C5 bringt beide Branches zusammen.</small>
+        </section>
+
+        <section id="rebase">
+          <h2>Linearisierung mit <code>git rebase</code></h2>
+          <pre>$ git checkout <span style="color: #F44D27">experiment</span>
+$ git rebase master</pre>
+          <img src="images/integration/diverged-history-rebase.png">
+
+          <small>Eine Kopie von <code>C4</code> wird auf <code>master</code> als <code>C4'</code> angewendet.</small>
+        </section>
+
+        <section>
+          <h2>Noch mehr Möglichkeiten</h2>
+
+          <ul>
+            <li>
+              <code>git cherry-pick &lt;SHA&gt;</code><br>
+              <small>Einen Commit direkt anwenden.</small>
+            </li>
+            <li>
+              <code>git merge --squash topic</code><br>
+              <small>Zusammenführen aller Commits eines Branches zu einem Commit auf dem aktuellen Branch.</small>
+            </li>
+            <li>
+              <code>git merge feature/login bugfix/42 experiment/foo</code><br>
+              <small>Mehrere Branches mit einem Merge-Commit integrieren.</small>
+            </li>
+            <li>&hellip;und noch mehr ;-)</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h1>Vielen Dank! :-)</h1>
+        <br>
+        <a href="http://grossweber.com/git">grossweber.com/git</a>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+
+  <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      // The "normal" size of the presentation, aspect ratio will be preserved
+      // when the presentation is scaled to fit different resolutions. Can be
+      // specified using percentage units.
+      width: 1100,
+      height: 768,
+
+      // Factor of the display size that should remain empty around the content
+      margin: 0.1,
+
+      // Bounds for smallest/largest possible scale to apply to content
+      minScale: 0.2,
+      maxScale: 1.0,
+
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      theme: Reveal.getQueryHash().theme || 'simplest', // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+      backgroundTransition: 'slide', // default/none/slide/concave/convex/zoom
+
+      // Parallax scrolling
+      // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+      // parallaxBackgroundSize: '2100px 900px',
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+    });
+  </script>
+
+</body>
 </html>
